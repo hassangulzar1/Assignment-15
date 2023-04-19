@@ -2,10 +2,16 @@
 let str = "Hello World";
 
 function toggleCase(txt) {
-  let upperCase =
-    str.match(/[A-Z]/g).join("").toLowerCase() &&
-    str.match(/[a-z]/g).join("").toUpperCase();
-  console.log(upperCase);
+  let result = "";
+  for (let i = 0; i < txt.length; i++) {
+    let char = txt[i];
+    if (char === char.toUpperCase()) {
+      result += char.toLowerCase();
+    } else {
+      result += char.toUpperCase();
+    }
+  }
+  return result;
 }
 
-toggleCase(str);
+console.log(toggleCase(str));

@@ -1,6 +1,6 @@
 // 16. Write a js program to search all occurrences of a character in given string.
 let string = "Hassan";
-let char = "s";
+let char = "a";
 let allOccurrences = (str, char) => {
   let occurrence = [];
   for (let i = 0; i < str.length; i++) {
